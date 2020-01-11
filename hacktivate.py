@@ -81,7 +81,7 @@ def downloadTools():
 def jailbreakDevice():
 	print(format("- [*] We're going to jailbreak your device now.", "info"))
 	input(format("- [!] Put your device into DFU mode. Hit enter when you're in DFU mode.", "prompt"))
-	checkra1nProc = pexpect.spawn("/Applications/checkra1n.app/Contents/MacOS/checkra1n_gui -V")
+	checkra1nProc = pexpect.spawn("/Applications/checkra1n.app/Contents/MacOS/checkra1n -V")
 	try:
 		while True:
 			line = checkra1nProc.readline()
